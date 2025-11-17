@@ -1,4 +1,3 @@
-
 function realizarBusca() {
     const termo = document.getElementById('campoBusca').value.trim();
     if (!termo) {
