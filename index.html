@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mobiliza Já | Aluguel e Doação de Equipamentos de Acessibilidade</title>
+
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="TCC-IOS MOBILIZE JÁ/style.css">
+    <script src="nav.js" defer></script>
+    <script src="indexBusca.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm custom-navbar">
+
+
+        <div class="container">
+
+            <a class="navbar-brand text-primary fw-bold" href="#">
+                <i class="bi bi-person-wheelchair me-2"></i>Mobiliza Já
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item"><a class="nav-link" href="#">Aluguel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Doação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#quem-somos">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Contato">Contato</a></li>
+
+
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-primary me-2" href="formularioDeDoacoes.html">Doar</a>
+
+                        <a class="btn btn-primary" href=""><i class="bi bi-cart me-1"></i>Quero Alugar</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--define cor primaria e padding no botão (bootstrap)-->
+    <header class="hero-section">
+        <div class="container py-5">
+            <div class="row align-items-center">
+
+                <div class="col-md-7 mb-4 mb-md-0 text-white">
+                    <h1 class="display-4 fw-bolder">Recupere a sua Liberdade.<br>Simplifique a sua Rotina.</h1>
+
+                    <p class="lead my-4">Encontre cadeiras de rodas, andadores, camas hospitalares e mais,
+                        para alugar ou receber doação.<br><strong>Baixo Custo e Entrega Rápida!</strong>
+                    </p>
+
+                    <form class="d-flex" role="search" onsubmit="event.preventDefault(); realizarBusca();">
+                        <input id="campoBusca" class="form-control form-control-lg me-2" type="search"
+                            placeholder="Buscar equipamento (ex: Cadeira de Rodas)" aria-label="Search">
+                        <button class="btn btn-primary btn-lg" type="submit">Buscar</button>
+                    </form>
+                </div>
+
+                <div class="col-md-5 text-center">
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!--QUEM SOMOS-->
+
+    <section id="quem-somos" class="py-5 bg-light">
+        <div class="container">
+
+            <h2 class="text-center mb-5 fw-bold fs-1">Quem Somos</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <div class="card p-4 p-md-5 shadow-sm border-0 rounded-4">
+                        <div class="card-body">
+
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="bg-primary text-white rounded-circle d-flex justify-content-center align-items-center"
+                                    style="width: 55px; height: 55px; font-size: 28px;">
+                                    <i class="bi bi-layers"></i>
+                                </div>
+                                <h3 class="fw-bold text-primary fs-2 mb-0 ms-3">
+                                    Nossa História
+                                </h3>
+                            </div>
+
+                            <p class="fs-4 text-muted" style="line-height: 1.6;">
+                                A <strong>Mobiliza Já</strong> nasceu com um propósito simples e transformador:
+                                facilitar o acesso a equipamentos de mobilidade e promover inclusão para pessoas
+                                que enfrentam limitações temporárias ou permanentes.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold fs-1">Como podemos Ajudar Você?</h2>
+
+            <div class="row g-4 align-items-stretch">
+
+                <!-- Card Aluguel -->
+                <div class="col-md-6">
+                    <div class="card p-4 shadow-sm h-100 border-0 bg-light">
+                        <div class="card-body d-flex flex-column justify-content-between">
+
+                            <div>
+                                <h3 class="card-title text-primary fs-2 mb-3">Aluguel Rápido</h3>
+
+                                <p class="fs-5 text-muted mb-4">
+                                    Encontre o equipamento ideal para facilitar sua rotina com conforto e segurança.
+                                    Nosso aluguel é simples, rápido e pensado para quem precisa de mobilidade agora.
+                                </p>
+
+                                <div class="mb-4 d-flex flex-wrap gap-2">
+                                    <span class="badge bg-primary px-3 py-2 fs-6">Cadeiras de Rodas</span>
+                                    <span class="badge bg-primary px-3 py-2 fs-6">Andadores</span>
+                                    <span class="badge bg-primary px-3 py-2 fs-6">Cadeiras de Banho</span>
+                                </div>
+                            </div>
+
+                            <a href="#" class="btn btn-primary btn-lg mt-3 fw-semibold">
+                                Ver Equipamentos para Aluguel
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card Doação -->
+                <div class="col-md-6">
+                    <div class="card p-4 shadow-sm h-100 border-0">
+                        <div class="card-body d-flex flex-column justify-content-between">
+
+                            <div>
+                                <h3 class="card-title text-success fs-2 d-flex align-items-center mb-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                        class="bi bi-heart-fill me-2" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                                    </svg>
+                                    Faça uma Doação
+                                </h3>
+
+                                <p class="card-text fs-5">
+                                    Seu equipamento parado pode mudar a vida de alguém. Conectamos você a quem precisa
+                                    de
+                                    forma transparente e segura.
+                                </p>
+
+                                <div class="text-center my-4">
+                                    <h4 class="text-dark fw-bold fs-2">
+                                        128 Vidas Transformadas ⭐
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" class="bi bi-star-fill text-warning"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M3.612 15.424 5.378 9.771 0 6.353l6.5-.544L12 1 8.614 6.353l6.5.544-5.378 3.653z" />
+                                        </svg>
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <a href="formularioDeDoacoes.html" class="btn btn-success btn-lg mt-3 fw-semibold">
+                                Formulário de Doação
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--(produtos)-->
+
+    <section class="py-5 bg-light">
+        <div class="container">
+
+            <h2 class="text-center mb-5 fw-bold">Equipamentos em Destaque</h2>
+
+            <!-- Abas -->
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-alugados-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-alugados" type="button" role="tab" aria-controls="pills-alugados"
+                        aria-selected="true">
+                        Mais Alugados
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-doacao-tab" data-bs-toggle="pill" data-bs-target="#pills-doacao"
+                        type="button" role="tab" aria-controls="pills-doacao" aria-selected="false">
+                        Novos Itens para Doação
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Conteúdo das Abas -->
+            <div class="tab-content" id="pills-tabContent">
+
+                <!-- ============================= -->
+                <!--   ABAS — MAIS ALUGADOS        -->
+                <!-- ============================= -->
+                <div class="tab-pane fade show active" id="pills-alugados" role="tabpanel"
+                    aria-labelledby="pills-alugados-tab">
+
+                    <div id="carouselAlugados" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <!-- SLIDE 1 -->
+                            <div class="carousel-item active">
+                                <div class="row g-4">
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="TCC-mobilizaJa/assets/Cadeira de rodas manual em ângulo.png"
+                                                class="card-img-top">
+                                           <div class="card-body text-center">
+
+                                                <h5 class="card-title">Cadeira de Rodas</h5>
+                                                <p class="card-text text-primary fw-bold">A partir de R$ 359,00 / mês
+                                                </p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="TCC-mobilizaJa/assets/ChatGPT Image 17 de nov. de 2025, 09_26_41.png"
+                                                class="card-img-top">
+                                            <div class="card-body text-center">
+
+                                                <h5 class="card-title">Andador Articulado</h5>
+                                                <p class="card-text text-primary fw-bold">A partir de R$ 60,00 / mês</p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="TCC-mobilizaJa/assets/Gemini_Generated_Image_3h2k3m3h2k3m3h2k.png"
+                                                class="card-img-top">
+                                           <div class="card-body text-center">
+
+                                                <h5 class="card-title"> Cama Hospitalar Elétrica</h5> 
+                                                <p class="card-text text-primary fw-bold">A partir de R$ 450,00 / mês
+                                                </p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="TCC-mobilizaJa/assets/Muleta de alumínio ajustável.png"
+                                                class="card-img-top">
+                                            <div class="card-body text-center">
+
+                                                <h5 class="card-title">Muletas Ajustáveis</h5>
+                                                <p class="card-text text-primary fw-bold">A partir de R$ 25,00 / dia</p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="TCC-mobilizaJa/assets/Cadeira de rodas manual em ângulo.png"
+                                                class="card-img-top">
+                                            <div class="card-body text-center">
+
+                                                <h5 class="card-title">Andador 4 Rodas</h5>
+                                                <p class="card-text text-primary fw-bold">A partir de R$ 85,00 / mês</p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="TCC-mobilizaJa/assets/Gemini_Generated_Image_w1vw62w1vw62w1vw.png"
+                                                class="card-img-top">
+                                            <div class="card-body text-center">
+
+                                                <h5 class="card-title">Cadeira de Banho Reforçada</h5>
+                                                <p class="card-text text-primary fw-bold">A partir de R$ 70,00 / mês</p>
+                                                <a href="#" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Controles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAlugados"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselAlugados"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ============================= -->
+                <!--   ABAS — DOAÇÃO (CARROSSEL)   -->
+                <!-- ============================= -->
+                <div class="tab-pane fade" id="pills-doacao" role="tabpanel" aria-labelledby="pills-doacao-tab">
+
+                    <div id="carouselDoacao" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <!-- SLIDE 1 -->
+                            <div class="carousel-item active">
+                                <div class="row g-4">
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="TCC-mobilizaJa/assets/Muleta de alumínio ajustável.png"
+                                                class="card-img-top">
+                                           <div class="card-body text-center">
+
+                                                <h5 class="card-title">Bengala Ajustável</h5>
+                                                <p class="card-text text-muted">Estado: Nova</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="TCC-mobilizaJa/assets/Gemini_Generated_Image_4lsaho4lsaho4lsa.png"
+                                                class="card-img-top">
+                                           <div class="card-body text-center">
+
+                                                <h5 class="card-title">Prancha Ortopédica</h5>
+                                                <p class="card-text text-muted">Doação imediata</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="TCC-mobilizaJa/assets/Gemini_Generated_Image_6rcwlz6rcwlz6rcw.png"
+                                                class="card-img-top">
+                                           <div class="card-body text-center">
+
+                                                <h5 class="card-title">Suporte de Braço</h5>
+                                                <p class="card-text text-muted">Pouco uso</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- SLIDE 2 -->
+                            <div class="carousel-item">
+                                <div class="row g-4">
+
+                                    <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm border-0">
+                                            <img src="https://placehold.co/400x300/60a5fa/ffffff?text=Cadeira+Infantil"
+                                                class="card-img-top">
+                                            <div class="card-body text-center">
+
+                                                <h5 class="card-title">Cadeira Infantil</h5>
+                                                <p class="card-text text-muted">Limpa e conservada</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Controles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDoacao"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDoacao"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                    </div>
+                </div>
+</section>
+
+
+                <!-- Fale conosco / painel de dúvidas-->
+
+                <section id="Contato" class="bg-primary text-white py-5">
+                    <div class="container text-center">
+                        <h2 class="fw-bold mb-3">Tem Dúvidas? Fale Conosco!</h2>
+                        <p class="lead mb-4">Nossa equipe está pronta para te ajudar a encontrar o equipamento ideal
+                            para você.</p>
+                        <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO"
+                            class="btn btn-lg btn-light text-primary shadow">
+                            <i class="bi bi-whatsapp me-2"></i> Chamar no WhatsApp
+                        </a>
+                    </div>
+                </section>
+
+                <footer class="bg-dark text-white-50 py-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <h5 class="text-white">Mobiliza Já</h5>
+                                <p>Sua plataforma de mobilidade e solidariedade. <br>&copy; 2025-Todos os direitos
+                                    reservados aos
+                                    Alunos do IOS.</p>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <h5 class="text-white">Links</h5>
+                                <ul class="list-unstyled">
+                                    <li class="nav-item"><a class="nav-link" href="#quem-somos">Quem Somos</a></li>
+                                    <li><a href="#" class="text-white-50 text-decoration-none">Termos de Uso</a></li>
+                                    <li><a href="#" class="text-white-50 text-decoration-none">Política de
+                                            Privacidade</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <h5 class="text-white">Siga-nos</h5>
+                                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

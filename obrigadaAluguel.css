@@ -1,0 +1,9 @@
+  .fake-check {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 2px solid #198754;
+            border-radius: 12px;
+            padding: 25px;
+            background: #e8fff0;
+  }

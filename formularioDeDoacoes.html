@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação de Equipamento - Moderno</title>
+
+    <link rel="stylesheet" href="formularioDeDoacoes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+</head>
+
+<body>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+
+                <div class="card shadow-lg border-0 rounded-4">
+                    <div class="card-header text-center pt-4 bg-white">
+                        <h2 class="fw-bold text-primary mb-1">Doação Acessível</h2>
+                        <p class="text-muted">Preencha o formulário para registrar seu equipamento.</p>
+                    </div>
+                    <div class="card-body p-4 p-md-5">
+                        <form action="#" method="POST" enctype="multipart/form-data">
+
+                            <div class="mb-4">
+                                <label for="tipoEquipamento" class="form-label fw-semibold"><i
+                                        class="bi bi-gear-wide-connected me-2"></i>Tipo de Equipamento</label>
+                                <select class="form-select form-select-lg" id="tipoEquipamento" name="tipoEquipamento"
+                                    required>
+                                    <option selected disabled value="">Selecione o tipo de auxílio...</option>
+                                    <option value="cadeira_rodas">Cadeira de Rodas</option>
+                                    <option value="muletas">Muletas</option>
+                                    <option value="andador">Andador</option>
+                                    <option value="aparelho_auditivo">Aparelho Auditivo</option>
+                                    <option value="bengala">Bengala / Bengala Tátil</option>
+                                    <option value="outro">Outro...</option>
+                                </select>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <textarea class="form-control" id="descricaoDetalhes" name="descricaoDetalhes"
+                                    placeholder="Detalhes" style="height: 100px" required></textarea>
+                                <label for="descricaoDetalhes">Detalhes (Estado, Tamanho, Condição...)</label>
+                            </div>
+
+                            <div class="form-floating mb-4">
+                                <input type="text" class="form-control" id="localizacao" name="localizacao"
+                                    placeholder="Cidade e Estado" list="listaCidades" required>
+                                <label for="localizacao"><i class="bi bi-geo-alt-fill me-2"></i>Cidade e Estado</label>
+                            </div>
+
+                            <datalist id="listaCidades">
+                                <option value="São Paulo, SP"></option>
+                                <option value="Rio de Janeiro, RJ"></option>
+                                <option value="Belo Horizonte, MG"></option>
+                                <option value="Porto Alegre, RS"></option>
+                                <option value="Curitiba, PR"></option>
+                                <option value="Salvador, BA"></option>
+                                <option value="Recife, PE"></option>
+                                <option value="Brasília, DF"></option>
+                                <option value="Fortaleza, CE"></option>
+                                <option value="Campinas, SP"></option>
+                                <option value="Outra Cidade..."></option>
+                            </datalist>
+
+
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="nomeDoador" name="nomeDoador"
+                                            placeholder="Seu Nome" required>
+                                        <label for="nomeDoador"><i class="bi bi-person-fill me-2"></i>Seu Nome</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="emailDoador" name="emailDoador"
+                                            placeholder="Seu E-mail" required>
+                                        <label for="emailDoador"><i class="bi bi-envelope-fill me-2"></i>Seu
+                                            E-mail</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <div class="mb-4">
+                                <label for="uploadFotos" class="form-label fw-semibold"><i
+                                        class="bi bi-camera-fill me-2"></i>Fotos do Equipamento (Máximo 3)</label>
+                                <input class="form-control form-control-lg" type="file" id="uploadFotos"
+                                    name="fotosEquipamento[]" accept="image/*" multiple required>
+                                <div class="form-text">Fotos nítidas ajudam muito na doação.</div>
+                            </div>
+
+                            <div class="d-grid mt-4">
+
+                                <a href="obrigadaPorDoar.html"
+                                    class="btn btn-primary btn-lg rounded-pill shadow-sm d-inline-flex align-items-center justify-content-center text-center">
+                                    <i class="bi bi-box-seam me-2"></i> Finalizar Doação
+                                </a>
+
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
