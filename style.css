@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 /* RESET */
 * {
     margin: 0;
@@ -14,6 +16,52 @@
 
     --shadow-soft: 0 4px 20px rgba(0,0,0,0.08);
 }
+
+
+
+    
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+    }
+    
+    .hero-banner {
+        /* A cor de fundo primária do Bootstrap (azul) com opacidade de 10% */
+        /* Esta linha será sobreposta pelo background-image, mas pode ser um fallback */
+        background-color: rgba(13, 110, 253, 0.1); 
+        
+        /* IMAGEM DE FUNDO DO BANNER - Cole aqui o content_id da imagem desejada */
+        background-image: url('TCC-mobilizaJa/assets/Gemini_Generated_Image_i8jd64i8jd64i8jd.png'); /* SUBSTITUA 'content_id' pelo ID da imagem */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden; 
+    }
+
+    /* Sobreposição semi-transparente para garantir a leitura do texto */
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* ALTERADO: Diminuindo a opacidade do branco para ver mais da imagem */
+        background-color: rgba(255, 255, 255, 0.4); /* Era 0.85, agora 0.6 (60% branco, 40% imagem visível) */
+        z-index: 1; 
+    }
+
+    /* Conteúdo do banner deve ficar acima da sobreposição */
+    .hero-content {
+        position: relative;
+        z-index: 2; 
+    }
+    
+    /* Para remover a imagem extra que estava no HTML */
+    .hero-banner .col-md-5 img {
+        display: none;
+    }
+
 
 /* TIPOGRAFIA */
 body {
@@ -120,4 +168,3 @@ section .card:not(.bg-light):hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
 }
-
