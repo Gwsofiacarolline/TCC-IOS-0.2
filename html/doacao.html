@@ -6,45 +6,582 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobiliza Já | Aluguel e Doação de Equipamentos de Acessibilidade</title>
 
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 
 <body>
-
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
 
-    <div class="container">
+        <div class="container">
 
-        <a class="navbar-brand text-primary fw-bold" href="/index.html">
-            <i class="bi bi-person-wheelchair me-2"></i>Mobiliza Já
-        </a>
+            <a class="navbar-brand text-primary fw-bold" href="/index.html">
+                <i class="bi bi-person-wheelchair me-2"></i>Mobiliza Já
+            </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
 
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-                <li class="nav-item"><a class="nav-link" href="aluguel.html">Aluguel</a></li>
-                <li class="nav-item"><a class="nav-link" href="doacao.html">Doação</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Como Funciona</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aluguel.html">Aluguel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="doacao.html">Doação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Como Funciona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
 
 
-                <li class="nav-item ms-lg-3">
-                    <a class="btn btn-outline-primary me-2" href="#">Doar</a>
-                    <a class="btn btn-primary" href="#"><i class="bi bi-cart me-1"></i> Quero Alugar </a>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-outline-primary me-2" href="#">Doar</a>
+                        <a class="btn btn-primary" href="#"><i class="bi bi-cart me-1"></i> Quero Alugar </a>
 
-                    
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-dark py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <h1 class="display-4 fw-bolder">Shop in style</h1>
+                <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-                </li>
-            </ul>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="https://ortopediaonlinesp.com.br/wp-content/uploads/2025/04/Munique-1.png"
+                            alt="Cadeira de Rodas" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Cadeira de Rodas</h5>
+                                R$150 / Mês
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-primary mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal1" href="#">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="https://images.tcdn.com.br/img/img_prod/1024429/cama_hospitalar_motorizada_3_movimentos_a6k_zimedical_123_3_444fcf443cb95ed0c3073f7847b9c40a.jpg"
+                            alt="Cama Hospitalar" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <br>
+                                <br>
+                                <br>
+                                <h5 class="fw-bolder">Cama Hospitalar</h5>
+                                R$60.00 / dia
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-primary mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal2" href="#">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="assets/img/muletaSF.png" alt="Muletas Ergonômicas" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Muletas Ergonômicas</h5>
+                                R$10.00 / dia
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-primary mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal3" href="#">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="https://http2.mlstatic.com/D_NQ_NP_2X_751668-MLA79728714763_102024-F.webp"
+                            alt="Andador de Rodas" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Andador de Rodas</h5>
+                                R$25.00 / dia
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-primary mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal4" href="#">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="https://http2.mlstatic.com/D_NQ_NP_2X_790390-MLA80333103514_112024-F.webp"
+                            alt="Banco para Banho" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Banco para Banho</h5>
+                                R$15.00 / dia
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-primary mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal5" href="#">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="https://loja.ortobras.com.br/media/webp/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/l/elev300-1_1024x1024__png.webp"
+                            alt="Elevador de Transferência" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Elevador de Transferência</h5>
+                                R$150.00 / dia
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-primary mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal6" href="#">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="https://mvm.ind.br/site/wp-content/uploads/2019/07/03_OK_19E681B0-0A69_suporte-600x600.jpg"
+                            alt="Suporte de Soro" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Suporte de Soro</h5>
+                                R$12.00 / dia
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center">
+                                <a class="btn btn-primary mt-auto" data-bs-toggle="modal"
+                                    data-bs-target="#detalhesModal9" href="#">Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark text-white-50 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-white">Mobiliza Já</h5>
+                    <p>Sua plataforma de mobilidade e solidariedade. <br>&copy; 2025 Todos os direitos reservados aos
+                        Alunos que fizeram o TCC IOS.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-white">Links Úteis</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50 text-decoration-none">Quem Somos</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Termos de Uso</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="text-white">Siga-nos</h5>
+                    <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="detalhesModal1" tabindex="-1" aria-labelledby="detalhesModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalhesModal1">Detalhes da Cadeira de Rodas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="main-product-image-1"
+                                src="https://ortopediaonlinesp.com.br/wp-content/uploads/2025/04/Munique-1.png"
+                                class="img-fluid rounded mb-3" alt="Cadeira de Rodas Frente">
+
+                            <div class="d-flex justify-content-center flex-wrap">
+                                <img class="thumbnail img-fluid rounded me-2 active"
+                                    src="https://ortopediaonlinesp.com.br/wp-content/uploads/2025/04/Munique-2.png"
+                                    alt="Cadeira de Rodas Frente"
+                                    data-full-src="https://ortopediaonlinesp.com.br/wp-content/uploads/2025/04/Munique-2.png">
+
+
+                                <img class="thumbnail img-fluid rounded me-2"
+                                    src="https://ortopediaonlinesp.com.br/wp-content/uploads/2025/04/Munique-5.png"
+                                    alt="Cadeira de Rodas Trás"
+                                    data-full-src="https://ortopediaonlinesp.com.br/wp-content/uploads/2025/04/Munique-5.png">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">Construída com estrutura reforçada em alumínio, a cadeira é dobrável com
+                                duplo X. Portanto, ela oferece excelente durabilidade sem comprometer a leveza,
+                                facilitando o transporte e armazenamento..</p>
+                            <ul>
+                                <li>Material: Aço carbono com pintura epóxi eletrostática</li>
+                                <li>Capacidade: Até 125kg</li>
+                                <li>Assento: Nylon resistente, largura de 46cm, profundidade de 41cm</li>
+                                <li>Apoio de braços: Em PU, articulados, com ajuste de altura
+                                </li>
+                                <li> Apoio de pés: Removíveis, em nylon, com regulagem altura</li>
+                                <li> Garantia:12 meses para estrutura(fornecida pelo fabricante)</li>
+                                <li>Opções de Aluguel: Diário, Semanal, Mensal</li>
+                            </ul>
+                            <h4 class="text-primary">Valor: R$150/ Mês</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn btn-success">Quero Alugar Agora</a>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
+
+    <div class="modal fade" id="detalhesModal2" tabindex="-1" aria-labelledby="detalhesModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalhesModal2">Detalhes da Cama Hospitalar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="main-product-image-2"
+                                src="https://images.tcdn.com.br/img/img_prod/1024429/cama_hospitalar_motorizada_3_movimentos_a6k_zimedical_123_3_444fcf443cb95ed0c3073f7847b9c40a.jpg"
+                                class="img-fluid rounded mb-3" alt="Cama Hospitalar Frente">
+
+                            <div class="d-flex justify-content-center flex-wrap">
+
+                                <img class="thumbnail img-fluid rounded me-2 active"
+                                    src="https://images.tcdn.com.br/img/img_prod/1024429/cama_hospitalar_motorizada_3_movimentos_a6k_zimedical_123_3_444fcf443cb95ed0c3073f7847b9c40a.jpg"
+                                    alt="Cama Hospitalar Principal"
+                                    data-full-src="https://images.tcdn.com.br/img/img_prod/1024429/cama_hospitalar_motorizada_3_movimentos_a6k_zimedical_123_3_444fcf443cb95ed0c3073f7847b9c40a.jpg">
+
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">Cama hospitalar elétrica, ideal para recuperação em casa com conforto e
+                                segurança. Possui controle remoto para ajustes.</p>
+                            <ul>
+                                <li>**Acionamento:** Elétrico (controle remoto)</li>
+                                <li>**Recursos:** Ajuste de altura e posições (Fowler, Semi-Fowler)</li>
+                                <li>**Capacidade:** Até 150 kg</li>
+                                <li>**Opções de Aluguel:** Diário, Semanal, Mensal</li>
+                            </ul>
+                            <h4 class="text-primary">Valor: R$60.00 / dia</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn btn-success">Quero Alugar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detalhesModal3" tabindex="-1" aria-labelledby="detalhesModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalhesModal3">Detalhes das Muletas Ergonômicas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/img/muletaSF.png" class="img-fluid rounded" alt="Muletas Ergonômicas">
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">Muletas leves com design ergonômico, proporcionando maior conforto e
+                                estabilidade durante a locomoção.</p>
+                            <ul>
+                                <li>**Material:** Alumínio ultraleve</li>
+                                <li>**Ajuste:** Altura regulável com pino de segurança</li>
+                                <li>**Segurança:** Ponta em borracha antiderrapante</li>
+                                <li>**Opções de Aluguel:** Diário, Semanal, Mensal</li>
+                            </ul>
+                            <h4 class="text-primary">Valor: R$10.00 / dia</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn btn-success">Quero Alugar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detalhesModal4" tabindex="-1" aria-labelledby="detalhesModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalhesModal4">Detalhes do Andador de Rodas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="main-product-image-4"
+                                src="https://http2.mlstatic.com/D_NQ_NP_2X_751668-MLA79728714763_102024-F.webp"
+                                class="img-fluid rounded mb-3" alt="Andador de Rodas">
+
+                            <div class="d-flex justify-content-center flex-wrap">
+                                <img class="thumbnail img-fluid rounded me-2 active"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_751668-MLA79728714763_102024-F.webp"
+                                    alt="Andador Principal"
+                                    data-full-src="https://http2.mlstatic.com/D_NQ_NP_2X_751668-MLA79728714763_102024-F.webp">
+
+                                <img class="thumbnail img-fluid rounded me-2"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_706063-MLA79481634606_102024-F.webp"
+                                    alt="Andador Detalhe 1"
+                                    data-full-src="https://http2.mlstatic.com/D_NQ_NP_2X_706063-MLA79481634606_102024-F.webp">
+
+                                <img class="thumbnail img-fluid rounded me-2"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_688218-MLA79728451119_102024-F.webp"
+                                    alt="Andador Detalhe 2"
+                                    data-full-src="https://http2.mlstatic.com/D_NQ_NP_2X_688218-MLA79728451119_102024-F.webp">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">Andador de quatro rodas com cesto de armazenamento, freios de mão e assento
+                                para descanso. Dobrável e fácil de transportar.</p>
+                            <ul>
+                                <li>**Rodas:** 4 rodas, ideal para ambientes internos e externos</li>
+                                <li>**Recursos:** Freios de mão e assento acoplado</li>
+                                <li>**Material:** Estrutura em aço leve</li>
+                                <li>**Opções de Aluguel:** Diário, Semanal, Mensal</li>
+                            </ul>
+                            <h4 class="text-primary">Valor: R$25.00 / dia</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn btn-success">Quero Alugar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detalhesModal5" tabindex="-1" aria-labelledby="detalhesModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalhesModal5">Detalhes do Banco para Banho</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="main-product-image-5"
+                                src="https://http2.mlstatic.com/D_NQ_NP_2X_790390-MLA80333103514_112024-F.webp"
+                                class="img-fluid rounded mb-3" alt="Banco para Banho">
+
+                            <div class="d-flex justify-content-center flex-wrap">
+                                <img class="thumbnail img-fluid rounded me-2 active"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_790390-MLA80333103514_112024-F.webp"
+                                    alt="Banco Principal"
+                                    data-full-src="https://http2.mlstatic.com/D_NQ_NP_2X_790390-MLA80333103514_112024-F.webp">
+
+                                <img class="thumbnail img-fluid rounded me-2"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_642704-MLA84407505684_052025-F.webp"
+                                    alt="Banco Detalhe 1"
+                                    data-full-src="https://http2.mlstatic.com/D_NQ_NP_2X_642704-MLA84407505684_052025-F.webp">
+
+                                <img class="thumbnail img-fluid rounded me-2"
+                                    src="https://http2.mlstatic.com/D_NQ_NP_2X_969740-MLA84704892613_052025-F.webp"
+                                    alt="Banco Detalhe 2"
+                                    data-full-src="https://http2.mlstatic.com/D_NQ_NP_2X_969740-MLA84704892613_052025-F.webp">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">Cadeira/Banco para banho, projetado para garantir a segurança e o conforto
+                                no
+                                banheiro. Possui pés antiderrapantes.</p>
+                            <ul>
+                                <li>**Material:** Plástico resistente e alumínio</li>
+                                <li>**Segurança:** Pés de borracha antiderrapante</li>
+                                <li>**Recursos:** Altura ajustável e alças laterais</li>
+                                <li>**Opções de Aluguel:** Semanal, Mensal</li>
+                            </ul>
+                            <h4 class="text-primary">Valor: R$15.00 / dia</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn btn-success">Quero Alugar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="detalhesModal6" tabindex="-1" aria-labelledby="detalhesModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalhesModal6">Detalhes do Elevador de Transferência</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="main-product-image-6"
+                                src="https://loja.ortobras.com.br/media/webp/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/l/elev300-1_1024x1024__png.webp"
+                                class="img-fluid rounded mb-3" alt="Elevador de Transferência">
+
+                            <div class="d-flex justify-content-center flex-wrap">
+                                <img class="thumbnail img-fluid rounded me-2 active"
+                                    src="https://loja.ortobras.com.br/media/webp/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/l/elev300-1_1024x1024__png.webp"
+                                    alt="Elevador Principal"
+                                    data-full-src="https://loja.ortobras.com.br/media/webp/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/l/elev300-1_1024x1024__png.webp">
+
+                                <img class="thumbnail img-fluid rounded me-2"
+                                    src="https://loja.ortobras.com.br/media/webp/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/l/elev300-2_1024x1024__png.webp"
+                                    alt="Elevador Detalhe 1"
+                                    data-full-src="https://loja.ortobras.com.br/media/webp/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/l/elev300-2_1024x1024__png.webp">
+
+                                <img class="thumbnail img-fluid rounded me-2"
+                                    src="https://loja.ortobras.com.br/media/webp/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/l/elev300-3_1024x1024__png.webp"
+                                    alt="Elevador Detalhe 2"
+                                    data-full-src="https://loja.ortobras.com.br/media/webp/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/l/elev300-3_1024x1024__png.webp">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">Equipamento essencial para transferir pacientes de forma segura e com mínimo
+                                esforço. Ideal para uso doméstico ou hospitalar.</p>
+                            <ul>
+                                <li>**Tipo:** Elétrico com acionamento por bateria</li>
+                                <li>**Capacidade:** Até 180 kg</li>
+                                <li>**Segurança:** Cinto de segurança e base ajustável</li>
+                                <li>**Opções de Aluguel:** Diário, Semanal, Mensal</li>
+                            </ul>
+                            <h4 class="text-primary">Valor: R$150.00 / dia</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn btn-success">Quero Alugar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="detalhesModal9" tabindex="-1" aria-labelledby="detalhesModalLabel9" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="detalhesModal9">Detalhes do Suporte de Soro em Alumínio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="main-product-image-9"
+                                src="https://mvm.ind.br/site/wp-content/uploads/2019/07/03_OK_19E681B0-0A69_suporte-600x600.jpg"
+                                class="img-fluid rounded mb-3" alt="Suporte de Soro">
+
+                            <div class="d-flex justify-content-center flex-wrap">
+                                <img class="thumbnail img-fluid rounded me-2 active"
+                                    src="https://mvm.ind.br/site/wp-content/uploads/2019/07/03_OK_19E681B0-0A69_suporte-600x600.jpg"
+                                    alt="Suporte Principal"
+                                    data-full-src="https://mvm.ind.br/site/wp-content/uploads/2019/07/03_OK_19E681B0-0A69_suporte-600x600.jpg">
+
+                                <img class="thumbnail img-fluid rounded me-2"
+                                    src="https://mvm.ind.br/site/wp-content/uploads/2019/07/Suporte-Soro-Fiador-86x86.jpg"
+                                    alt="Suporte Detalhe 1"
+                                    data-full-src="https://mvm.ind.br/site/wp-content/uploads/2019/07/Suporte-Soro-Fiador-86x86.jpg">
+
+                                <img class="thumbnail img-fluid rounded me-2"
+                                    src="https://mvm.ind.br/site/wp-content/uploads/2019/07/Suporte-Soro-Base-86x86.jpg"
+                                    alt="Suporte Detalhe 2"
+                                    data-full-src="https://mvm.ind.br/site/wp-content/uploads/2019/07/Suporte-Soro-Base-86x86.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">Suporte móvel com altura ajustável e base firme, ideal para infusões
+                                em hospitais, clínicas ou em casa. Leve e fácil de manusear.</p>
+                            <ul>
+                                <li>**Material:** Alumínio e base em plástico de alta resistência</li>
+                                <li>**Regulagem:** Altura ajustável com trava de segurança</li>
+                                <li>**Mobilidade:** Rodízios de alta qualidade</li>
+                                <li>**Recursos:** 4 ganchos para soro e alça para transporte</li>
+                                <li>**Opções de Aluguel:** Diário, Semanal, Mensal</li>
+                            </ul>
+                            <h4 class="text-primary">Valor: R$12.00 / dia</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <a href="#" class="btn btn-success">Quero Alugar Agora</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/modal-gallery.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
