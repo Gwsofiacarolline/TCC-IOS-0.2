@@ -270,3 +270,81 @@ tbody tr:hover {
     .category-card table td:nth-of-type(2):before { content: "Descrição"; }
     .category-card table td:nth-of-type(3):before { content: "Ação"; }
 }
+
+/* 9. Estilos para os campos de formulário e botão de CTA */
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Adicionando o estado ao lado de cidade */
+.flex-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.flex-row .input-group {
+    flex: 1;
+}
+
+.flex-row .input-group select {
+    width: 100%;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .flex-row {
+        flex-direction: column;
+    }
+
+    .cta-button {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
