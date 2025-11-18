@@ -1,0 +1,272 @@
+/*
+ * CSS Básico com foco em Acessibilidade e Responsividade
+ * Alto contraste e layout limpo.
+ */
+
+/* 1. Configurações Globais e Acessibilidade */
+:root {
+    --primary-color: #007BFF; /* Azul para botões e links */
+    --secondary-color: #28a745; /* Verde para destaque/sucesso */
+    --text-color: #333;
+    --background-color: #f4f4f9;
+    --light-gray: #ddd;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* Foco para acessibilidade com teclado */
+a:focus, button:focus, .cta-button:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+/* 2. Cabeçalho (Header) */
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.main-header p {
+    font-size: 1.2rem;
+}
+
+/* 3. Seções e Estrutura Principal (Main) */
+main section {
+    padding: 2.5rem 0;
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+main h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+/* 4. Seção "Por Que Alugar" */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.benefits-grid article {
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-color);
+    background-color: #f9fff4;
+    border-radius: 4px;
+}
+
+.benefits-grid h3 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* 5. Catálogo de Equipamentos (Tabelas) */
+.catalog-section h2, .catalog-section p {
+    padding: 0 1.5rem;
+}
+
+.category-card {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+}
+
+.category-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+thead th {
+    background-color: var(--light-gray);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+tbody tr:hover {
+    background-color: #f0f0f5; /* Leve destaque ao passar o mouse */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* 6. Seção "Como Alugar" */
+.how-to-rent ol {
+    list-style-type: decimal;
+    padding-left: 3rem;
+    margin-top: 1rem;
+}
+
+.how-to-rent li {
+    margin-bottom: 1rem;
+    padding: 0 1.5rem 0 0;
+}
+
+/* 7. Seção "Fale Conosco" */
+.contact-info address {
+    font-style: normal;
+    padding: 0 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* 8. Rodapé (Footer) */
+.main-footer {
+    background-color: var(--text-color);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Para responsividade */
+}
+
+.main-footer nav a {
+    color: #a0c4ff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.main-footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para telas menores (ex: celular) */
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .main-footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-footer p {
+        margin-bottom: 1rem;
+    }
+
+    .main-footer nav a {
+        margin: 0 10px;
+    }
+    
+    /* Tabelas em telas pequenas */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    
+    thead {
+        display: none; /* Esconde o cabeçalho original */
+    }
+    
+    tr {
+        margin-bottom: 15px;
+        border: 1px solid var(--light-gray);
+        border-radius: var(--border-radius);
+    }
+    
+    td {
+        border: none;
+        border-bottom: 1px dotted var(--light-gray);
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+    }
+    
+    td:last-child {
+        border-bottom: 0;
+    }
+    
+    /* Adiciona o cabeçalho como pseudo-elemento para acessibilidade visual */
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+    /* Adicionando rótulos para as células em telas pequenas */
+    .category-card table td:nth-of-type(1):before { content: "Equipamento"; }
+    .category-card table td:nth-of-type(2):before { content: "Descrição"; }
+    .category-card table td:nth-of-type(3):before { content: "Ação"; }
+}
