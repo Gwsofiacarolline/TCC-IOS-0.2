@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 /*!
 * Start Bootstrap - Shop Homepage v5.0.6 (https://startbootstrap.com/template/shop-homepage)
 * Copyright 2013-2023 Start Bootstrap
@@ -91,6 +91,52 @@
     scroll-behavior: smooth;
   }
 }
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.hero-banner {
+  /* A cor de fundo primária do Bootstrap (azul) com opacidade de 10% */
+  /* Esta linha será sobreposta pelo background-image, mas pode ser um fallback */
+  background-color: rgba(13, 110, 253, 0.1); 
+  
+  
+  /* IMAGEM DE FUNDO DO BANNER - Cole aqui o content_id da imagem desejada */
+  background-image: url('../assets/bannerPagAluguel.webp'); /* SUBSTITUA 'content_id' pelo ID da imagem */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden; 
+  min-height: 350px;
+  align-items: center;
+}
+
+/* Sobreposição semi-transparente para garantir a leitura do texto */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2); /* Menos opacidade */
+  z-index: 1;
+}
+
+/* Conteúdo do banner deve ficar acima da sobreposição */
+.hero-content {
+  position: relative;
+  z-index: 2; 
+}
+
+/* Para remover a imagem extra que estava no HTML */
+.hero-banner .col-md-5 img {
+  display: none;
+}
+
+
 
 body {
   margin: 0;
