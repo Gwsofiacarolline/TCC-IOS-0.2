@@ -170,3 +170,20 @@ section .card:not(.bg-light):hover {
     transform: translateY(-8px);
     box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
 }
+
+
+/* Isso pode estar limitando a altura de TODAS as imagens de card */
+.card-img-top {
+    width: 100%;
+    /* Remova a linha 'height' se ela estiver muito baixa */
+    /* Exemplo: height: 150px; */ 
+    object-fit: contain; /* ou 'cover' dependendo do seu objetivo */
+}
+
+/* Para tentar dar mais altura apenas para a imagem da cama, se for necessário */
+.card .card-img-top[alt="Cama Hospitalar"] {
+    /* Remova a linha de cima, ou use um valor maior */
+    /* Ex: */
+    max-height: 300px; /* Tente um valor maior, se precisar */
+    /* Ou, se a imagem for o único elemento no topo do card, ela deveria expandir */
+}
