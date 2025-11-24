@@ -105,7 +105,7 @@ body {
   
   
   /* IMAGEM DE FUNDO DO BANNER - Cole aqui o content_id da imagem desejada */
-  background-image: url('../assets/bannerPagAluguel.webp'); /* SUBSTITUA 'content_id' pelo ID da imagem */
+  background-image: url(''); /* SUBSTITUA 'content_id' pelo ID da imagem */
   background-size: cover;
   background-position: center;
   position: relative;

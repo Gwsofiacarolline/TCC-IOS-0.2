@@ -48,26 +48,32 @@
                             <h5 class="fw-semibold mb-3">Endereço de Entrega</h5>
 
                             <div class="mb-3">
-                                <label class="form-label">Rua</label>
-                                <input type="text" class="form-control" placeholder="Nome da rua" required>
+                                <label class="form-label" for="cep">CEP</label>
+                                <input type="text" id="cep" class="form-control" placeholder="00000-000" required>
+                                <span id="message" class="form-text"></span> <!-- Aqui será mostrada a mensagem -->
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="rua">Rua</label>
+                                <input type="text" id="rua" class="form-control" placeholder="Nome da rua" required>
                             </div>
 
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label class="form-label">Número</label>
-                                    <input type="text" class="form-control" placeholder="Número" required>
+                                    <label class="form-label" for="numero">Número</label>
+                                    <input type="text" id="numero" class="form-control" placeholder="Número" required>
                                 </div>
 
                                 <div class="col-md-6 mb-3">
-                                    <label class="form-label">Bairro</label>
-                                    <input type="text" class="form-control" placeholder="Bairro" required>
+                                    <label class="form-label" for="bairro">Bairro</label>
+                                    <input type="text" id="bairro" class="form-control" placeholder="Bairro" required>
                                 </div>
                             </div>
 
                             <div class="mb-3">
-                                <label class="form-label">Cidade</label>
-                                <input type="text" class="form-control" placeholder="Cidade" required>
-
+                                <label class="form-label" for="cidade">Cidade</label>
+                                <input type="text" id="cidade" class="form-control" placeholder="Cidade" list="listaCidades" required> 
+                                
                                 <datalist id="listaCidades">
                                     <option value="São Paulo, SP"></option>
                                     <option value="Rio de Janeiro, RJ"></option>
@@ -102,18 +108,13 @@
 
                             <div class="row">
                                 <div class="col-12 mb-3">
-                                    <label for="descricaoSolicitacao" class="form-label">Descrição da
-                                        Solicitação</label>
-                                    <textarea class="form-control" id="descricaoSolicitacao" rows="3"
-                                        placeholder="Detalhe sua solicitação aqui..." required></textarea>
+                                    <label for="descricaoSolicitacao" class="form-label">Descrição da Solicitação</label>
+                                    <textarea class="form-control" id="descricaoSolicitacao" rows="3" placeholder="Detalhe sua solicitação aqui..." required></textarea>
                                 </div>
                             </div>
 
-
-
                             <div class="text-center mt-4">
-                                <a href="obrigadaAluguel.html"
-                                    class="btn btn-success btn-lg rounded-pill px-5 shadow-sm">
+                                <a href="obrigadaAluguel.html" class="btn btn-success btn-lg rounded-pill px-5 shadow-sm">
                                     Finalizar Pedido
                                 </a>
                             </div>
@@ -126,16 +127,9 @@
             </div>
         </div>
     </div>
-    <div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-  new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
+
+    <!-- Referencia o script JavaScript -->
+    <script src="../js/formPreceberDoar.js"></script>
 
 </body>
 
